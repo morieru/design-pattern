@@ -1,0 +1,9 @@
+@startuml state-transition-diagram
+skinparam monochrome true
+skinparam shadowing false
+
+[*] -> Dying
+Dying -> [*] : kill()
+Dying -> Dead
+Dead --> [*]
+@enduml

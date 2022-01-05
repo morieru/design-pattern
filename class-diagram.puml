@@ -1,0 +1,19 @@
+@startuml class-diagram
+skinparam monochrome true
+skinparam shadowing false
+
+hide empty members
+hide circle
+
+class Worker {
+  execute(data)
+}
+
+class Morieru {
+  state=Dying
+  kill()
+}
+
+Worker <|-- Morieru
+
+@enduml
